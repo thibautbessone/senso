@@ -1,0 +1,21 @@
+{
+  "name": "@thibautbessone/senso",
+  "version": "1.0.0",
+  "description": "Choose a meaningful name for that brand new JS framework you are developing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "thibautbessone/senso"
+  },
+  "keywords": [
+    "javascript",
+    "framework",
+    "name",
+    "generator"
+  ],
+  "author": "thibautbessone",
+  "license": "MIT"
+}
