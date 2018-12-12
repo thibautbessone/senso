@@ -1,17 +1,28 @@
 const fs = require('fs');
 
-let ideas = process.argv.splice(2); //gets args
-
+const ideas = process.argv.splice(2); //gets args
 console.log(ideas);
 
 let dictionary = JSON.parse(fs.readFileSync('dictionary.json', 'utf8'));
+getEligibleWords();
 
-ideas.forEach(function (idea) {
-    console.log(idea);
-    findWords(idea, dictionary);
-});
+function getEligibleWords() {
+    let eligibleWords = [];
+    ideas.forEach(function (idea) {
+        console.log("Idea: " + idea);
+        trimWords(idea, dictionary);
+    });
 
-function findWords(idea, dico) {
+    //Trimmed dictionary
+    Object.keys(dictionary).forEach(function (key) {
+        eligibleWords.push(key);
+    });
+
+    console.log(eligibleWords);
+    return eligibleWords;
+}
+
+function trimWords(idea, dico) {
     let newDico = {};
     Object.keys(dictionary).forEach(function (key) {
         if(dico[key].includes(idea)) {
@@ -19,5 +30,5 @@ function findWords(idea, dico) {
         }
     });
     dictionary = newDico;
-    console.log(Object.keys(newDico).length);
+    console.log("Matching words: " + Object.keys(newDico).length);
 }
