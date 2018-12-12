@@ -8,7 +8,7 @@ What ? You'd rather spend the time for searching that name actually developing?
 Fear no more ! With this ***incredible new framework/package/whatever man you have to use this*** called Senso, all of the research will be done for you and you will only have to pick that one name you prefer over the proposed ones! 
 
 
-###In a more serious tone
+### In a more serious tone
 
 Senso uses the Webster's Unabridged English Dictionary to retrieve some words where the definition matches with the desired idea(s) to translate them in several languages to pick your project's name from.
 
