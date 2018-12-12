@@ -1,4 +1,4 @@
-# SENSO
+# Senso
 
 ### Choose a meaningful name for that brand new JS framework you are developing
 
