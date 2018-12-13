@@ -1,5 +1,5 @@
 {
-  "name": "@thibautbessone/senso",
+  "name": "senso",
   "version": "1.0.0",
   "description": "Choose a meaningful name for that brand new JS framework you are developing",
   "main": "index.js",
@@ -17,5 +17,8 @@
     "generator"
   ],
   "author": "thibautbessone",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
 }

@@ -10,9 +10,16 @@ Fear no more ! With this ***incredible new framework/package/whatever man you ha
 
 ### In a more serious tone
 
-Senso uses the Webster's Unabridged English Dictionary to retrieve some words where the definition matches with the desired idea(s) to translate them in several languages to pick your project's name from.
+Senso uses [moby](https://github.com/words/moby) as a base to retrieve synonyms of the desired idea.
 
-The dictionary.json file is taken from [here](https://github.com/adambom/dictionary).
+The dictionary.json file is taken from [here](https://github.com/words/moby/blob/master/words.txt).
+It has been rearranged as a JSON file for better usability.
 
+You can use pretty much any file following this format (commas for convenience): 
 
-
+```json
+{
+  "beer": "drinks,alcohol,beverage",
+  "pizza": "food,snack"
+}
+```
