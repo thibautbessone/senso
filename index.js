@@ -9,7 +9,8 @@ let trimmer = new WordTrimmer(dictionary, ideas);
 let wordsToTranslate = trimmer.getEligibleWords();
 
 let translator = new WordTranslator(wordsToTranslate);
-translator.getTranslations();
-
+translator.getTranslations().then(function () {
+    console.log(JSON.stringify(translator.translations));
+});
 
 

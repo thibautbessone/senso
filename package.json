@@ -19,6 +19,7 @@
   "author": "thibautbessone",
   "license": "MIT",
   "dependencies": {
+    "@k3rn31p4nic/google-translate-api": "^1.0.5",
     "request": "^2.88.0"
   }
 }
