@@ -41,57 +41,63 @@ nameGenerator.generateNames().then(function (names) {
 The code above will produce the following output :
 
 ```json
-{  
-  "cabaret":[  
-    {  
+{
+  "cabaret":[
+    {
       "language":"ar",
       "translation":"ملهى"
     },
-    {  
+    {
       "language":"es",
       "translation":"cabaret"
     },
-    {  
+    {
       "language":"fr",
       "translation":"cabaret"
     },
-    {  
+    {
       "language":"ja",
-      "translation":"キャバレー"
+      "translation":"キャバレー",
+      "romanized":"kiyabare"
     },
-    {  
+    {
       "language":"ko",
-      "translation":"카바레"
+      "translation":"카바레",
+      "romanized":"kabare"
     },
-    {  
+    {
       "language":"ru",
-      "translation":"кабаре"
+      "translation":"кабаре",
+      "romanized":"kabare"
     }
   ],
-  "nightclub":[  
-    {  
+  "nightclub":[
+    {
       "language":"ar",
       "translation":"ملهى ليلي"
     },
-    {  
+    {
       "language":"es",
       "translation":"Club nocturno"
     },
-    {  
+    {
       "language":"fr",
       "translation":"boîte de nuit"
     },
-    {  
+    {
       "language":"ja",
-      "translation":"ナイトクラブ"
+      "translation":"ナイトクラブ",
+      "romanized":"naitokurabu"
     },
-    {  
+    {
       "language":"ko",
-      "translation":"나이트 클럽"
+      "translation":"나이트 클럽",
+      "romanized":"naiteu keulreob"
     },
-    {  
+    {
       "language":"ru",
-      "translation":"ночной клуб"
+      "translation":"ночной клуб",
+      "romanized":"nochnoy klub"
     }
   ]
 }
