@@ -45,7 +45,8 @@ The code above will produce the following output :
   "cabaret":[
     {
       "language":"ar",
-      "translation":"ملهى"
+      "translation":"ملهى",
+      "romanized":"mlh~"
     },
     {
       "language":"es",
@@ -74,7 +75,8 @@ The code above will produce the following output :
   "nightclub":[
     {
       "language":"ar",
-      "translation":"ملهى ليلي"
+      "translation":"ملهى ليلي",
+      "romanized":"mlh~ lyly"
     },
     {
       "language":"es",
