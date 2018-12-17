@@ -3,10 +3,20 @@ const WordTrimmer = require('./lib/WordTrimmer');
 const WordTranslator = require('./lib/WordTranslator');
 
 class Generator {
+    /**
+     * Entity used to return names with their translation
+     * @constructor
+     * @param {array} ideas - The ideas for the project name
+     */
     constructor(ideas) {
         this.ideas = ideas;
         this.names = "";
     }
+
+    /**
+     * Generate the names from a base dictionary (dictionary.json) matching the given ideas
+     * @return Promise<any> JSON object containing words and their translations
+     */
     generateNames() {
         return new Promise(async resolve => {
             let generatorInstance = this;
