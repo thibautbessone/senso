@@ -41,44 +41,58 @@ nameGenerator.generateNames().then(function (names) {
 The code above will produce the following output :
 
 ```json
-{
-	"cabaret": [{
-		"language": "ar",
-		"translation": "ملهى"
-	}, {
-		"language": "es",
-		"translation": "cabaret"
-	}, {
-		"language": "fr",
-		"translation": "cabaret"
-	}, {
-		"language": "ja",
-		"translation": "キャバレー"
-	}, {
-		"language": "ko",
-		"translation": "카바레"
-	}, {
-		"language": "ru",
-		"translation": "кабаре"
-	}],
-	"nightclub": [{
-		"language": "ar",
-		"translation": "ملهى ليلي"
-	}, {
-		"language": "es",
-		"translation": "Club nocturno"
-	}, {
-		"language": "fr",
-		"translation": "boîte de nuit"
-	}, {
-		"language": "ja",
-		"translation": "ナイトクラブ"
-	}, {
-		"language": "ko",
-		"translation": "나이트 클럽"
-	}, {
-		"language": "ru",
-		"translation": "ночной клуб"
-	}]
+{  
+  "cabaret":[  
+    {  
+      "language":"ar",
+      "translation":"ملهى"
+    },
+    {  
+      "language":"es",
+      "translation":"cabaret"
+    },
+    {  
+      "language":"fr",
+      "translation":"cabaret"
+    },
+    {  
+      "language":"ja",
+      "translation":"キャバレー"
+    },
+    {  
+      "language":"ko",
+      "translation":"카바레"
+    },
+    {  
+      "language":"ru",
+      "translation":"кабаре"
+    }
+  ],
+  "nightclub":[  
+    {  
+      "language":"ar",
+      "translation":"ملهى ليلي"
+    },
+    {  
+      "language":"es",
+      "translation":"Club nocturno"
+    },
+    {  
+      "language":"fr",
+      "translation":"boîte de nuit"
+    },
+    {  
+      "language":"ja",
+      "translation":"ナイトクラブ"
+    },
+    {  
+      "language":"ko",
+      "translation":"나이트 클럽"
+    },
+    {  
+      "language":"ru",
+      "translation":"ночной клуб"
+    }
+  ]
 }
 ```
