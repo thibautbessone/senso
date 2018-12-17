@@ -7,18 +7,19 @@ class Generator {
         this.ideas = ideas;
         this.names = "";
     }
-    async generateNames() {
-        let generatorInstance = this;
-        let dictionary = JSON.parse(fs.readFileSync('dictionary.json', 'utf8'));
+    generateNames() {
+        return new Promise(async resolve => {
+            let generatorInstance = this;
+            let dictionary = JSON.parse(fs.readFileSync('dictionary.json', 'utf8'));
 
-        let trimmer = new WordTrimmer(dictionary, generatorInstance.ideas);
-        let wordsToTranslate = trimmer.getEligibleWords();
+            let trimmer = new WordTrimmer(dictionary, generatorInstance.ideas);
+            let wordsToTranslate = trimmer.getEligibleWords();
 
-        let translator = new WordTranslator(wordsToTranslate);
-        await translator.getTranslations().then(function () {
-            generatorInstance.names = JSON.stringify(translator.translations);
-            //FIXME return that ffs
-            console.log(generatorInstance.names);
+            let translator = new WordTranslator(wordsToTranslate);
+            await translator.getTranslations().then(function () {
+                generatorInstance.names = JSON.stringify(translator.translations);
+                resolve(generatorInstance.names);
+            });
         });
     }
 }
