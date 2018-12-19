@@ -1,6 +1,7 @@
 const fs = require('fs');
 const WordTrimmer = require('./lib/WordTrimmer');
 const WordTranslator = require('./lib/WordTranslator');
+const dictionary = require('./dictionary.json');
 
 class Generator {
     /**
@@ -22,8 +23,6 @@ class Generator {
     generateNames() {
         return new Promise(async resolve => {
             let generatorInstance = this;
-            let dictionary = JSON.parse(fs.readFileSync('dictionary.json', 'utf8'));
-
             let trimmer = new WordTrimmer(dictionary, generatorInstance.ideas);
             let wordsToTranslate = trimmer.getEligibleWords();
 
