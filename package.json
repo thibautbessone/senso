@@ -1,6 +1,6 @@
 {
   "name": "senso",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Choose a meaningful name for that brand new JS framework you are developing",
   "main": "index.js",
   "scripts": {
