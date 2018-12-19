@@ -26,9 +26,14 @@ You can use pretty much any file following this format (commas for convenience):
 
 ## Usage
 
+
+The words translated and returned in a JSON object are randomly chosen among the words matching the ideas provided.
+The number of words returned is defined by the second parameter of the Generator constructor.
+
 ```javascript
 // Create the name generator with an array containing various ideas
-let nameGenerator = new Generator(['fun', 'drink','club','night','bar','dance','lounge','opera']);
+// Pick 2 words out of the matching ones
+let nameGenerator = new Generator(['fun', 'drink','club','night','bar','dance','lounge'], 2);
 // Handle the result
 nameGenerator.generateNames().then(function (names) {
     // Do whatever you want with the result
