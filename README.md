@@ -26,6 +26,10 @@ You can use pretty much any file following this format (commas for convenience):
 
 ## Usage
 
+### Installation
+
+Install the package with `npm install senso --save`
+
 
 The words translated and returned in a JSON object are randomly chosen among the words matching the ideas provided.
 The number of words returned is defined by the second parameter of the Generator constructor.

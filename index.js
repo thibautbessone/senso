@@ -1,4 +1,3 @@
-const fs = require('fs');
 const WordTrimmer = require('./lib/WordTrimmer');
 const WordTranslator = require('./lib/WordTranslator');
 const dictionary = require('./dictionary.json');
