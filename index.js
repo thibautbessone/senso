@@ -1,6 +1,6 @@
-const WordTrimmer = require('./lib/WordTrimmer');
-const WordTranslator = require('./lib/WordTranslator');
-const dictionary = require('./dictionary.json');
+const WordTrimmer = require("./lib/WordTrimmer");
+const WordTranslator = require("./lib/WordTranslator");
+const dictionary = require("./dictionary.json");
 
 class Generator {
     /**

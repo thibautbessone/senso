@@ -7,7 +7,6 @@ What ? You'd rather spend the time for searching that name actually developing?
 
 Fear no more ! With this ***incredible new framework/package/whatever man you have to use this*** called Senso, all of the research will be done for you and you will only have to pick that one name you prefer over the proposed ones! 
 
-
 ### In a more serious tone
 
 Senso uses [moby](https://github.com/words/moby) as a base to retrieve synonyms of the desired idea.
@@ -29,7 +28,6 @@ You can use pretty much any file following this format (commas for convenience):
 ### Installation
 
 Install the package with `npm install senso --save`
-
 
 The words translated and returned in a JSON object are randomly chosen among the words matching the ideas provided.
 The number of words returned is defined by the second parameter of the Generator constructor.
