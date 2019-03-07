@@ -20,7 +20,7 @@ class Generator {
      * @return Promise<any> JSON object containing words and their translations
      */
     generateNames() {
-        return new Promise(async resolve => {
+        return new Promise(async (resolve) => {
             let generatorInstance = this;
             let trimmer = new WordTrimmer(dictionary, generatorInstance.ideas);
             let wordsToTranslate = trimmer.getEligibleWords();
